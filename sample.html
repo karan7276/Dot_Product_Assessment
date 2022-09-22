@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Todo</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <style>
+        #grad1 {
+          height: 800px;  
+          background-image: linear-gradient(to bottom right, violet, pink);
+        }
+        </style>
+    <body>
+        <div class="container-fluid" id="grad1">
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <select class="form-select bg-light"><option> M </option></select>
+                    Project Team Spirit
+                    <input type="button" class="btn bg-light" value=" * "> |
+                </div>
+                <div class="col-md-5">
+                    <input type="button" class="btn bg-light" value=" Pune, India"> 
+                    <img src="1.jpg" class="rounded-circle" width="7%">
+                    <img src="1.jpg" class="rounded-circle" width="7%">
+                    <img src="1.jpg" class="rounded-circle" width="7%">
+                    <span class="badge bg-light">+12</span>
+                    <input type="button" class="btn bg-light" value=" Invite">
+                </div>
+                <div class="ml-auto">
+                    <input type="button" class="btn bg-light" value=" --- Wednesday, 14-Sept-2022">
+                </div>
+            </div>
+            <br>
+            <div class="card-deck">
+                <div class="card bg-light">
+                    <div class="card-header">To-Do</div>
+                    <div class="card-body">
+                        <input id="todo-input" type="text" class="form-control" value="">
+                        <button type="button" onclick="CreateTodo();" class="btn btn-primary mb-2 ml-2">Add todo</button>
+                        <div class="row" id="todo-container">
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted"> + Add New to-do</div>
+                </div>
+                <div class="card bg-light">
+                    <div class="card-header">Doing</div>
+                    <div class="card-body">
+                        <input id="todo-input" type="text" class="form-control" value="">
+                    </div>
+                    <div class="card-footer text-muted"> + Add to doing list</div>
+                </div>
+                <div class="card bg-light">
+                    <div class="card-header">Done</div>
+                    <div class="card-body">
+                        <input id="todo-input" type="text" class="form-control" value="">
+                    </div>
+                    <div class="card-footer text-muted"> + Add to Done list</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
